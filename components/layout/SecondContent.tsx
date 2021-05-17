@@ -15,6 +15,7 @@ type WorkContentProps = {
   tertiaryItem1?: string;
   tertiaryItem2?: string;
   tertiaryItem3?: string;
+  tertiaryItem4?: string;
   maxWidth?: boolean;
   marginLeft?: boolean;
 };
@@ -63,6 +64,7 @@ export const SecondContent: React.FC<WorkContentProps> = ({
   tertiaryItem3,
   maxWidth = true,
   marginLeft = true,
+  tertiaryItem4,
 }) => {
   return (
     <Wrapper minWidth={maxWidth} marginLeft={marginLeft}>
@@ -85,6 +87,7 @@ export const SecondContent: React.FC<WorkContentProps> = ({
       </ItemWrapper>
       <ItemWrapper>
         <PrimaryItem>{primaryItem4}</PrimaryItem>
+        <SecondaryItem>{tertiaryItem4}</SecondaryItem>
         <SecondaryItem>{secondaryItem4}</SecondaryItem>
       </ItemWrapper>
     </Wrapper>

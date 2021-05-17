@@ -63,10 +63,14 @@ export default function Home() {
               primaryItem2={"Dagab"}
               primaryItem3={"Frode Laursen"}
               primaryItem4={"Postnord terminalen"}
-              secondaryItem1={"Feb 2021–Jun 2021"}
-              secondaryItem2={"2020–Pågående"}
-              secondaryItem3={"2018–2020"}
-              secondaryItem4={"2018–2018"}
+              secondaryItem1={"Praktikant"}
+              secondaryItem2={"Lagerarbetare"}
+              secondaryItem3={"Lagerarbetare"}
+              secondaryItem4={"Largerarbetare"}
+              tertiaryItem1={"Feb 2021–Jun 2021"}
+              tertiaryItem2={"2020–Pågående"}
+              tertiaryItem3={"2018–2020"}
+              tertiaryItem4={"2018–2019"}
             />
             <Divider hidden={false} largeHiden={false} midHidden={false} />
             <SecondContent
@@ -74,11 +78,14 @@ export default function Home() {
               maxWidth={false}
               title={"Utbildningar"}
               primaryItem1={"It-Högskolan"}
-              primaryItem2={"Bachelor"}
-              primaryItem3={"Highschool"}
-              secondaryItem1={"Göteborg, 2019–2021"}
-              secondaryItem2={"Accounting, 2008–2011"}
-              secondaryItem3={"Certificate, 2006–2008"}
+              primaryItem2={"University of Buea"}
+              primaryItem3={"Lycée Bilingue Buea"}
+              secondaryItem1={"Applikationsutvecklare"}
+              secondaryItem2={"Accounting"}
+              secondaryItem3={"Certificate, 2006–2008 "}
+              tertiaryItem1={"Göteborg, 2019–2021"}
+              tertiaryItem2={"Buea, Cameroon, 2008–2011"}
+              tertiaryItem3={"Buea, Cameroon, 2006–2008"}
             />
           </SegmentContainer>
 
