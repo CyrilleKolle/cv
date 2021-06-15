@@ -8,6 +8,6 @@ const Wrapper = styled.div`
   ${tw`lg:w-1/3`};
 `;
 
-export const LeftContent: React.FC<LeftContainerProps> = (props) => {
+export const LeftPageContent: React.FC<LeftContainerProps> = (props) => {
   return <Wrapper>{props.children}</Wrapper>;
 };

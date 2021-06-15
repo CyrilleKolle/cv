@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import { LeftContent } from "../components/Layout/LeftContent";
+import { LeftPageContent } from "../components/Layout/LeftPageContent";
 import { RightContent } from "../components/Layout/RightContent";
 import { HeaderContent } from "../components/Layout/HeaderContent";
 import { Divider } from "../components/Layout/Divider";
@@ -60,7 +59,7 @@ export default function Home() {
         />
         <Divider marginTop={false} />
         <Row>
-          <LeftContent>
+          <LeftPageContent>
             <IntroContainer>
               <ImageContent />
               <ContactContent
@@ -71,7 +70,7 @@ export default function Home() {
                 github="Github"
               />
             </IntroContainer>
-          </LeftContent>
+          </LeftPageContent>
           <RightContent>
             <Divider largeHiden={false} midHidden={false} />
             <IntroContent
