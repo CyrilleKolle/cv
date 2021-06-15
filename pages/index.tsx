@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FullPageWrapper from "../components/Layout/FullPageWrapper";
+
 import { LeftContent } from "../components/Layout/LeftContent";
 import { RightContent } from "../components/Layout/RightContent";
 import { HeaderContent } from "../components/Layout/HeaderContent";
@@ -14,6 +14,8 @@ import { SvgContent } from "../components/Layout/SvgContent";
 import { IntroContainer } from "../components/Layout/IntroContainer";
 import { SegmentContainer } from "../components/Layout/SegmentContainer";
 import { Footer } from "../components/Layout/Footer";
+import { PageContent } from "../components/Layout/PageContent";
+
 import Modal from "../components/Layout/Modal";
 import tw from "twin.macro";
 import styled from "styled-components";
@@ -51,7 +53,7 @@ export default function Home() {
 
   return (
     <>
-      <FullPageWrapper>
+      <PageContent>
         <HeaderContent
           name={"Cyrille Ngide Kolle"}
           description={"Frontend och backend-utvecklare"}
@@ -169,7 +171,7 @@ export default function Home() {
         <Divider bottomMargin={false} marginTop={false} />
         {isModalVisible === true && <Modal />}
         <Footer />
-      </FullPageWrapper>
+      </PageContent>
     </>
   );
 }

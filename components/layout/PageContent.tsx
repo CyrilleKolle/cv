@@ -14,7 +14,7 @@ const InnerWrapper = styled.div`
   position: relative;
 `;
 
-const FullPageWrapper: React.FC<PageProps> = (props) => {
+export const PageContent: React.FC<PageProps> = (props) => {
   const [animate, setAnimate] = useState(false);
   useEffect(() => {
     setTimeout(() => setAnimate(true), 1000);
@@ -25,4 +25,3 @@ const FullPageWrapper: React.FC<PageProps> = (props) => {
     </Wrapper>
   );
 };
-export default FullPageWrapper;
