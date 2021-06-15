@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-
+var emailjs = require("emailjs-com");
 const Form = () => {
   const [status, setStatus] = useState("Send");
   const [userEmail, setUserEmail] = useState("");
@@ -17,7 +17,7 @@ const Form = () => {
     title: title,
     message: msg,
   };
-  var emailjs = require("emailjs-com");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
