@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FullPageWrapper } from "../components/Layout/FullPageWrapper";
+import FullPageWrapper from "../components/Layout/FullPageWrapper";
 import { LeftContent } from "../components/Layout/LeftContent";
 import { RightContent } from "../components/Layout/RightContent";
 import { HeaderContent } from "../components/Layout/HeaderContent";
