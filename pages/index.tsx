@@ -15,7 +15,7 @@ import { SegmentContainer } from "../components/Layout/SegmentContainer";
 import { Footer } from "../components/Layout/Footer";
 import { PageContent } from "../components/Layout/PageContent";
 
-import Modal from "../components/Layout/Modal";
+import { Modal } from "../components/Layout/Modal";
 import tw from "twin.macro";
 import styled from "styled-components";
 

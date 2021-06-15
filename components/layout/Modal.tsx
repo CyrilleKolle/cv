@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Form from "./Form";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Modal = () => {
+export const Modal = () => {
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
@@ -165,5 +165,3 @@ const CloseButton = styled.svg`
   top: 18px;
   cursor: pointer;
 `;
-
-export default Modal;
