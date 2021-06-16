@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-// import Emailjs from "emailjs-com";
 
 const FormZ = () => {
   const [status, setStatus] = useState("Send");
