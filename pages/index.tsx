@@ -7,7 +7,7 @@ import { ImageContent } from "../components/layout/ImageContent";
 import { ContactContent } from "../components/layout/ContactContent";
 import { IntroContent } from "../components/layout/IntroContent";
 import { SecondContent } from "../components/layout/SecondContent";
-import { CompetencyContent } from "../components/layout/CompetencyContent";
+import { CompetenciesContent } from "../components/layout/CompetenciesContent";
 import { ReferenceContent } from "../components/layout/ReferenceContent";
 import { SvgContent } from "../components/layout/SvgContent";
 import { IntroContainer } from "../components/layout/IntroContainer";
@@ -114,7 +114,7 @@ export default function Home() {
             </SegmentContainer>
 
             <Divider />
-            <CompetencyContent
+            <CompetenciesContent
               title={"Kompetenser"}
               competencies={[
                 "Javascript",
