@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { LeftPageContent } from "../components/layout/LeftPageContent";
-import { RightContent } from "../components/layout/RightContent";
-import { HeaderContent } from "../components/layout/HeaderContent";
-import  Seperator from "../components/layout/Seperator";
-import { ImageContent } from "../components/layout/ImageContent";
+import TheRightContent from "../components/layout/TheRightContent";
+import TheHeader from "../components/layout/TheHeader";
+import Seperator from "../components/layout/Seperator";
+import TheImage from "../components/layout/TheImage";
 import ContactsContent from "../components/layout/ContactsContent";
-import { IntroContent } from "../components/layout/IntroContent";
-import { SecondContent } from "../components/layout/SecondContent";
+import TheIntroContent from "../components/layout/TheIntroContent";
+import TheSecondContent from "../components/layout/TheSecondContent";
 import CompetencyContent from "../components/layout/CompetencyContent";
-import { ReferenceContent } from "../components/layout/ReferenceContent";
-import { SvgContent } from "../components/layout/SvgContent";
-import { IntroContainer } from "../components/layout/IntroContainer";
-import { SegmentContainer } from "../components/layout/SegmentContainer";
-import { Footer } from "../components/layout/Footer";
-import { PageContent } from "../components/layout/PageContent";
+import TheReference from "../components/layout/TheReference";
+import TheSvgContent from "../components/layout/TheSvgContent";
+import TheIntroContainer from "../components/layout/TheIntroContainer";
+import Segments from "../components/layout/Segments";
+import TheFooter from "../components/layout/TheFooter";
+import ThePageContent from "../components/layout/ThePageContent";
 import Modal from "../components/layout/Modal";
 import tw from "twin.macro";
 import styled from "styled-components";
@@ -51,16 +51,16 @@ export default function Home() {
 
   return (
     <>
-      <PageContent>
-        <HeaderContent
+      <ThePageContent>
+        <TheHeader
           name={"Cyrille Ngide Kolle"}
           description={"Frontend och backend-utvecklare"}
         />
         <Seperator marginTop={false} />
         <Row>
           <LeftPageContent>
-            <IntroContainer>
-              <ImageContent />
+            <TheIntroContainer>
+              <TheImage />
               <ContactsContent
                 title="Kontakt"
                 email="ngidekollecyrille@gmail.com"
@@ -68,11 +68,11 @@ export default function Home() {
                 tel="+46(0)737-66 82 28"
                 github="Github"
               />
-            </IntroContainer>
+            </TheIntroContainer>
           </LeftPageContent>
-          <RightContent>
+          <TheRightContent>
             <Seperator largeHiden={false} midHidden={false} />
-            <IntroContent
+            <TheIntroContent
               reference={"Eric Ellersten, Kreativt ansvarig på Itiden:"}
               mainText={"”Han är positiv, intresserad och mycket trevlig”"}
               description={
@@ -80,8 +80,8 @@ export default function Home() {
               }
             />
             <Seperator hidden={false} largeHiden={false} midHidden={false} />
-            <SegmentContainer>
-              <SecondContent
+            <Segments>
+              <TheSecondContent
                 title={"Arbetslivserfarenhet"}
                 primaryItem1={"Itiden AB (LIA)"}
                 primaryItem2={"Dagab"}
@@ -97,7 +97,7 @@ export default function Home() {
                 tertiaryItem4={"2018–2019"}
               />
               <Seperator hidden={false} largeHiden={false} midHidden={false} />
-              <SecondContent
+              <TheSecondContent
                 marginLeft={false}
                 maxWidth={false}
                 title={"Utbildningar"}
@@ -111,7 +111,7 @@ export default function Home() {
                 tertiaryItem2={"Buea, Cameroon, 2008–2011"}
                 tertiaryItem3={"Buea, Cameroon, 2006–2008"}
               />
-            </SegmentContainer>
+            </Segments>
 
             <Seperator />
             <CompetencyContent
@@ -144,8 +144,8 @@ export default function Home() {
               ]}
             />
             <Seperator hidden={false} largeHiden={false} midHidden={false} />
-            <SegmentContainer>
-              <SecondContent
+            <Segments>
+              <TheSecondContent
                 title={"Språkkunskaper"}
                 primaryItem1={"Engelska"}
                 primaryItem2={"Franska"}
@@ -158,18 +158,18 @@ export default function Home() {
                 tertiaryItem3={"Talar: Väldigt bra"}
               />
               <Seperator hidden={false} largeHiden={false} midHidden={false} />
-              <ReferenceContent
+              <TheReference
                 title={"Referenser"}
                 description={"Referenser lämnas på begäran"}
               />
-            </SegmentContainer>
-          </RightContent>
+            </Segments>
+          </TheRightContent>
         </Row>
-        <SvgContent />
+        <TheSvgContent />
         <Seperator bottomMargin={false} marginTop={false} />
         {isModalVisible === true && <Modal />}
-        <Footer />
-      </PageContent>
+        <TheFooter />
+      </ThePageContent>
     </>
   );
 }

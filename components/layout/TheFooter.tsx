@@ -28,7 +28,7 @@ const Github = styled.a`
   ${tw`text-base font-bold text-blue-700 mt-4 md:mt-0 hover:text-pink-500`}
 `;
 
-export const Footer: React.FC<ContactContentProps> = ({}) => {
+const TheFooter: React.FC<ContactContentProps> = ({}) => {
   return (
     <Wrapper>
       <Name>Cyrille N. Kolle</Name>
@@ -59,3 +59,4 @@ export const Footer: React.FC<ContactContentProps> = ({}) => {
     </Wrapper>
   );
 };
+export default TheFooter;

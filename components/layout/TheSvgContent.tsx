@@ -19,7 +19,7 @@ const SmallWrappeer = styled.div`
   ${tw`flex flex-col self-start left-0 justify-start justify-items-start justify-self-start content-start items-start hidden md:inline`}
 `;
 
-export const SvgContent: React.FC<SvgContentProps> = (props) => {
+const TheSvgContent: React.FC<SvgContentProps> = (props) => {
   const [visible, setVisible] = useState(false);
   const handleHello = () => {
     setVisible(!visible);
@@ -64,3 +64,4 @@ export const SvgContent: React.FC<SvgContentProps> = (props) => {
     </>
   );
 };
+export default TheSvgContent;

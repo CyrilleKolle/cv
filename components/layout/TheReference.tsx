@@ -8,8 +8,7 @@ type ReferenceContentProps = {
 };
 
 const Wrapper = styled.div`
-  ${tw`md:ml-5 lg:w-1/2`}
-  /* @media only screen and (min-width: 768px) {
+  ${tw`md:ml-5 lg:w-1/2`}/* @media only screen and (min-width: 768px) {
     min-width: 400px;
   } */
 `;
@@ -26,7 +25,7 @@ const Line = styled.div`
   border: 1px solid;
 `;
 
-export const ReferenceContent: React.FC<ReferenceContentProps> = ({
+const TheReference: React.FC<ReferenceContentProps> = ({
   title,
   description,
 }) => {
@@ -38,3 +37,4 @@ export const ReferenceContent: React.FC<ReferenceContentProps> = ({
     </Wrapper>
   );
 };
+export default TheReference;

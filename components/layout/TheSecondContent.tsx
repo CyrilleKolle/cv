@@ -49,7 +49,7 @@ const Line = styled.div`
   ${tw`border-solid border-gray-900 w-full mx-auto mb-3 hidden md:block mt-12`}
   border: 1px solid;
 `;
-export const SecondContent: React.FC<WorkContentProps> = ({
+const TheSecondContent: React.FC<WorkContentProps> = ({
   title,
   primaryItem1,
   secondaryItem1,
@@ -93,3 +93,4 @@ export const SecondContent: React.FC<WorkContentProps> = ({
     </Wrapper>
   );
 };
+export default TheSecondContent;

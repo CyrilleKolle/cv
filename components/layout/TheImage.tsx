@@ -11,7 +11,7 @@ const Image = styled.img`
   } */
 `;
 
-export const ImageContent: React.FC<ImageContentProps> = (props) => {
+const TheImage: React.FC<ImageContentProps> = (props) => {
   return (
     <>
       <motion.div
@@ -36,3 +36,4 @@ export const ImageContent: React.FC<ImageContentProps> = (props) => {
     </>
   );
 };
+export default TheImage

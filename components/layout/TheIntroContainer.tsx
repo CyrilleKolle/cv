@@ -6,9 +6,9 @@ type IntroContainerProps = {};
 
 const Wrapper = styled.div<{ right?: boolean }>`
   ${tw`flex flex-col md:flex-row lg:(flex-col mr-5)`}
-
 `;
 
-export const IntroContainer: React.FC<IntroContainerProps> = (props) => {
+const TheIntroContainer: React.FC<IntroContainerProps> = (props) => {
   return <Wrapper>{props.children}</Wrapper>;
 };
+export default TheIntroContainer

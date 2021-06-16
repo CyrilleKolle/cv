@@ -3,33 +3,24 @@ import tw from "twin.macro";
 import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 
-type IntroContentProps = {
-  reference: string;
-  mainText: string;
+type HeaderContentProps = {
+  name: string;
   description: string;
 };
 
 const Wrapper = styled.div`
-  ${tw`flex flex-col`}
+  ${tw``}
 `;
-const EricReference = styled.div`
-  ${tw`text-xs text-gray-900`}
-  font-family: Helvetica;
-`;
-const MainText = styled.div`
-  ${tw`text-4xl mt-2 text-gray-900 max-w-lg`}
+const Name = styled.div`
+  ${tw`text-base font-bold`}
   font-family: Helvetica;
 `;
 const Description = styled.div`
-  ${tw`text-xl mt-6 text-gray-900 max-w-xl`}
+  ${tw`text-base`}
   font-family: Helvetica;
 `;
 
-export const IntroContent: React.FC<IntroContentProps> = ({
-  reference,
-  mainText,
-  description,
-}) => {
+const TheHeader: React.FC<HeaderContentProps> = ({ name, description }) => {
   return (
     <>
       <motion.div
@@ -44,17 +35,17 @@ export const IntroContent: React.FC<IntroContentProps> = ({
             scale: 1,
             opacity: 1,
             transition: {
-              delay: 0.8,
+              delay: 0.2,
             },
           },
         }}
       >
         <Wrapper>
-          <EricReference>{reference}</EricReference>
-          <MainText>{mainText}</MainText>
+          <Name>{name}</Name>
           <Description>{description}</Description>
         </Wrapper>
       </motion.div>
     </>
   );
 };
+export default TheHeader;

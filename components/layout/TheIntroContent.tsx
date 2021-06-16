@@ -25,7 +25,7 @@ const Description = styled.div`
   font-family: Helvetica;
 `;
 
-export const IntroContent: React.FC<IntroContentProps> = ({
+const TheIntroContent: React.FC<IntroContentProps> = ({
   reference,
   mainText,
   description,
@@ -58,3 +58,4 @@ export const IntroContent: React.FC<IntroContentProps> = ({
     </>
   );
 };
+export default TheIntroContent;

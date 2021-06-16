@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   ${tw`lg:w-2/3`};
 `;
 
-export const RightContent: React.FC<RightContainerProps> = (props) => {
+const TheRightContent: React.FC<RightContainerProps> = (props) => {
   return <Wrapper>{props.children}</Wrapper>;
 };
+export default TheRightContent;
