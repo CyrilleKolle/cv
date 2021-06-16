@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { LeftPageContent } from "../components/Layout";
+import { LeftPageContent } from "../components/Layout/LeftPageContent";
 import { RightContent } from "../components/Layout/RightContent";
 import { HeaderContent } from "../components/Layout/HeaderContent";
 import { Divider } from "../components/Layout/Divider";

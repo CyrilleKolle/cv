@@ -1,17 +1,15 @@
 import React from "react";
 import tw from "twin.macro";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 
-type ImageContentProps = {};
+type IntroContainerProps = {};
 
-const Image = styled.img`
-  ${tw`w-full rounded-sm max-w-sm`}/* @media only screen and (min-width: 1080px) {
-    height: 400px;
-  } */
+const Wrapper = styled.div<{ right?: boolean }>`
+  ${tw`flex flex-col md:flex-row`}
 `;
 
-export const ImageContent: React.FC<ImageContentProps> = (props) => {
+export const SegmentContainer: React.FC<IntroContainerProps> = (props) => {
   return (
     <>
       <motion.div
@@ -26,12 +24,12 @@ export const ImageContent: React.FC<ImageContentProps> = (props) => {
             scale: 1,
             opacity: 1,
             transition: {
-              delay: 0.4,
+              delay: 1,
             },
           },
         }}
       >
-        <Image src="/kolle.jpg" alt="Picture of the author" />
+        <Wrapper>{props.children}</Wrapper>
       </motion.div>
     </>
   );
