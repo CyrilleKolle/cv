@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { Form } from "./ContactForm";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
 import tw from "twin.macro";
-
+import { Form } from "./ContactForm";
 export const Modal = () => {
   const [isBrowser, setIsBrowser] = useState(false);
   const [x, cycleX] = useCycle(0, 50, 100);
