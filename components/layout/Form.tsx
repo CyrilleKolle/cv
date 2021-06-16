@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-
+//import emailjs from "emailjs-com";
 const FormZ = () => {
+  var emailjs = require("emailjs-com");
   const [status, setStatus] = useState("Send");
   const [userEmail, setUserEmail] = useState("");
   const [title, setTitle] = useState("");
@@ -17,12 +18,11 @@ const FormZ = () => {
     title: title,
     message: msg,
   };
-  var Emailjs = require("emailjs-com");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    Emailjs.send(service_id, template_id, template_params, user_id).then(
+    emailjs.send(service_id, template_id, template_params, user_id).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         setStatus("Sent");
