@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
-import Form from "./Form";
+import Form from "../layout/Form";
 import tw from "twin.macro";
-export const ModalContact = () => {
+
+const Modal = () => {
   const [isBrowser, setIsBrowser] = useState(false);
   const [x, cycleX] = useCycle(0, 50, 100);
   useEffect(() => {
@@ -186,3 +187,4 @@ const CloseButton = styled.svg`
   top: 18px;
   cursor: pointer;
 `;
+export default Modal;
