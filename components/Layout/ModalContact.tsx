@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
-import FormZ from "../layout/FormZ";
+import Form from "./Form";
 import tw from "twin.macro";
 export const ModalContact = () => {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -64,7 +64,7 @@ export const ModalContact = () => {
                 </StyledModalHeader>
 
                 <StyledModalBody>
-                  <FormZ />
+                  <Form />
                 </StyledModalBody>
               </StyledModal>
             </StyledModalOverlay>
