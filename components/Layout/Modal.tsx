@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import Form from "./ContactForm";
+import { Form } from "./ContactForm";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
 import tw from "twin.macro";
 

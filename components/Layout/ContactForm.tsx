@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-const Form = () => {
+export const Form = () => {
   const [status, setStatus] = useState("Send");
   const [userEmail, setUserEmail] = useState("");
   const [title, setTitle] = useState("");
@@ -105,4 +105,3 @@ const Button = styled.button`
 const ButtonContainer = styled.div`
   ${tw`w-full`}
 `;
-export default Form;
