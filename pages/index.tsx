@@ -14,8 +14,7 @@ import { IntroContainer } from "../components/Layout/IntroContainer";
 import { SegmentContainer } from "../components/Layout/SegmentContainer";
 import { Footer } from "../components/Layout/Footer";
 import { PageContent } from "../components/Layout/PageContent";
-
-import { Modal } from "../components/Layout/Modal";
+import { ModalContact } from "../components/Layout/ModalContact";
 import tw from "twin.macro";
 import styled from "styled-components";
 
@@ -168,7 +167,7 @@ export default function Home() {
         </Row>
         <SvgContent />
         <Divider bottomMargin={false} marginTop={false} />
-        {isModalVisible === true && <Modal />}
+        {isModalVisible === true && <ModalContact />}
         <Footer />
       </PageContent>
     </>
