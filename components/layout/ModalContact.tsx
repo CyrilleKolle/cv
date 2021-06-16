@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
-import tw from "twin.macro";
 import FormZ from "../layout/FormZ";
+import tw from "twin.macro";
 export const ModalContact = () => {
   const [isBrowser, setIsBrowser] = useState(false);
   const [x, cycleX] = useCycle(0, 50, 100);
