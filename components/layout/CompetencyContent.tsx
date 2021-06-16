@@ -25,7 +25,7 @@ const Line = styled.div`
   border: 1px solid;
 `;
 
-export const CompetenciesContent: React.FC<CompetencyProps> = ({
+const CompetencyContent: React.FC<CompetencyProps> = ({
   competencies,
   title,
 }) => {
@@ -62,3 +62,4 @@ export const CompetenciesContent: React.FC<CompetencyProps> = ({
     </>
   );
 };
+export default CompetencyContent;

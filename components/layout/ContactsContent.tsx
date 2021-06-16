@@ -32,7 +32,7 @@ const Github = styled.a`
   ${tw`text-base text-blue-700 mt-4 hover:text-pink-500`}
 `;
 
-export const ContactContent: React.FC<ContactContentProps> = ({
+const ContactsContent: React.FC<ContactContentProps> = ({
   title,
   email,
   tel,
@@ -93,3 +93,4 @@ export const ContactContent: React.FC<ContactContentProps> = ({
     </>
   );
 };
+export default ContactsContent;

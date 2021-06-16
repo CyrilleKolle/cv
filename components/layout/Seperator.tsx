@@ -32,7 +32,7 @@ const Line = styled.div<{
   }
 `;
 
-export const Divider: React.FC<DividerProps> = ({
+ const Seperator: React.FC<DividerProps> = ({
   marginTop = true,
   bottomMargin = true,
   hidden = true,
@@ -49,3 +49,4 @@ export const Divider: React.FC<DividerProps> = ({
     />
   );
 };
+export default Seperator

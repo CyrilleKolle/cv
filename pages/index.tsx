@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { LeftPageContent } from "../components/layout/LeftPageContent";
 import { RightContent } from "../components/layout/RightContent";
 import { HeaderContent } from "../components/layout/HeaderContent";
-import { Divider } from "../components/layout/Divider";
+import  Seperator from "../components/layout/Seperator";
 import { ImageContent } from "../components/layout/ImageContent";
-import { ContactContent } from "../components/layout/ContactContent";
+import ContactsContent from "../components/layout/ContactsContent";
 import { IntroContent } from "../components/layout/IntroContent";
 import { SecondContent } from "../components/layout/SecondContent";
-import { CompetenciesContent } from "../components/layout/CompetenciesContent";
+import CompetencyContent from "../components/layout/CompetencyContent";
 import { ReferenceContent } from "../components/layout/ReferenceContent";
 import { SvgContent } from "../components/layout/SvgContent";
 import { IntroContainer } from "../components/layout/IntroContainer";
@@ -56,12 +56,12 @@ export default function Home() {
           name={"Cyrille Ngide Kolle"}
           description={"Frontend och backend-utvecklare"}
         />
-        <Divider marginTop={false} />
+        <Seperator marginTop={false} />
         <Row>
           <LeftPageContent>
             <IntroContainer>
               <ImageContent />
-              <ContactContent
+              <ContactsContent
                 title="Kontakt"
                 email="ngidekollecyrille@gmail.com"
                 linkedin="LinkedIn"
@@ -71,7 +71,7 @@ export default function Home() {
             </IntroContainer>
           </LeftPageContent>
           <RightContent>
-            <Divider largeHiden={false} midHidden={false} />
+            <Seperator largeHiden={false} midHidden={false} />
             <IntroContent
               reference={"Eric Ellersten, Kreativt ansvarig på Itiden:"}
               mainText={"”Han är positiv, intresserad och mycket trevlig”"}
@@ -79,7 +79,7 @@ export default function Home() {
                 "Att bli programmerare är ett av de bästa besluten jag någonsin har tagit. Att ständigt få bli utmanad och hitta nya lösningar, gör att jobbet alltid är spännande. Jag är en ödmjuk och ambitiös kille med väldig stor passion för programmering. Under dem senaste månaderna har jag jobbat som praktikant hos itiden AB, där jag har arbetat med en mängdt olika projekt byggt med react, typescript, javascript, nextjs, för att nämna några. Men har också jobbat agilt och enligt olika design. Jag är även intresserad att lära mig nya språk och tekniker som .Net, laravel, php, python, cms, wordpress, adonis."
               }
             />
-            <Divider hidden={false} largeHiden={false} midHidden={false} />
+            <Seperator hidden={false} largeHiden={false} midHidden={false} />
             <SegmentContainer>
               <SecondContent
                 title={"Arbetslivserfarenhet"}
@@ -96,7 +96,7 @@ export default function Home() {
                 tertiaryItem3={"2018–2020"}
                 tertiaryItem4={"2018–2019"}
               />
-              <Divider hidden={false} largeHiden={false} midHidden={false} />
+              <Seperator hidden={false} largeHiden={false} midHidden={false} />
               <SecondContent
                 marginLeft={false}
                 maxWidth={false}
@@ -113,8 +113,8 @@ export default function Home() {
               />
             </SegmentContainer>
 
-            <Divider />
-            <CompetenciesContent
+            <Seperator />
+            <CompetencyContent
               title={"Kompetenser"}
               competencies={[
                 "Javascript",
@@ -143,7 +143,7 @@ export default function Home() {
                 "Project Management",
               ]}
             />
-            <Divider hidden={false} largeHiden={false} midHidden={false} />
+            <Seperator hidden={false} largeHiden={false} midHidden={false} />
             <SegmentContainer>
               <SecondContent
                 title={"Språkkunskaper"}
@@ -157,7 +157,7 @@ export default function Home() {
                 tertiaryItem2={"Talar: Flytande"}
                 tertiaryItem3={"Talar: Väldigt bra"}
               />
-              <Divider hidden={false} largeHiden={false} midHidden={false} />
+              <Seperator hidden={false} largeHiden={false} midHidden={false} />
               <ReferenceContent
                 title={"Referenser"}
                 description={"Referenser lämnas på begäran"}
@@ -166,7 +166,7 @@ export default function Home() {
           </RightContent>
         </Row>
         <SvgContent />
-        <Divider bottomMargin={false} marginTop={false} />
+        <Seperator bottomMargin={false} marginTop={false} />
         {isModalVisible === true && <Modal />}
         <Footer />
       </PageContent>
