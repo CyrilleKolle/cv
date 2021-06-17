@@ -16,20 +16,23 @@ const Wrapper = styled.div`
 `;
 const Title = styled.div`
   ${tw`text-base font-bold `}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Email = styled.a`
   ${tw`text-base text-blue-700 mt-4 hover:text-pink-500`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Telephone = styled.a`
   ${tw`text-base text-blue-700 mt-4 hover:text-pink-500`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 const LinkedIn = styled.a`
   ${tw`text-base text-blue-700 mt-4 hover:text-pink-500`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Github = styled.a`
   ${tw`text-base text-blue-700 mt-4 hover:text-pink-500`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 
 const ContactsContent: React.FC<ContactContentProps> = ({
@@ -42,8 +45,10 @@ const ContactsContent: React.FC<ContactContentProps> = ({
   return (
     <>
       <motion.div
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, y: 100 }}
+        exit={{ opacity: 1 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 2 }}
         variants={{
           hidden: {
             scale: 0.8,

@@ -15,8 +15,10 @@ const TheImage: React.FC<ImageContentProps> = (props) => {
   return (
     <>
       <motion.div
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, x: -100 }}
+        exit={{ opacity: 1 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: "spring", duration: 2 }}
         variants={{
           hidden: {
             scale: 0.7,
@@ -31,9 +33,9 @@ const TheImage: React.FC<ImageContentProps> = (props) => {
           },
         }}
       >
-        <Image src="/kolle.jpg" alt="Picture of the author" />
+        <Image src="/cyrille.jpg" alt="Picture of the author" />
       </motion.div>
     </>
   );
 };
-export default TheImage
+export default TheImage;

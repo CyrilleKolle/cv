@@ -5,7 +5,7 @@ import styled, { css } from "styled-components";
 type PageProps = {};
 
 const Wrapper = styled.div<{ right?: boolean; animate: boolean }>`
-  ${tw`bg-gray-300 flex flex-col min-h-screen pt-12 lg:`}
+  ${tw`bg-gray-300 flex flex-col min-h-screen pt-24 lg:`}
   position: relative;
 `;
 const InnerWrapper = styled.div`
@@ -25,4 +25,4 @@ const ThePageContent: React.FC<PageProps> = (props) => {
     </Wrapper>
   );
 };
-export default ThePageContent
+export default ThePageContent;

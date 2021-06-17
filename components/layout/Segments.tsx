@@ -13,8 +13,10 @@ const Segments: React.FC<IntroContainerProps> = (props) => {
   return (
     <>
       <motion.div
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, y: 120 }}
+        exit={{ opacity: 1 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 2 }}
         variants={{
           hidden: {
             scale: 0.7,
@@ -34,4 +36,4 @@ const Segments: React.FC<IntroContainerProps> = (props) => {
     </>
   );
 };
-export default Segments
+export default Segments;

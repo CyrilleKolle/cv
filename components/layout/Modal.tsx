@@ -86,6 +86,7 @@ const Modal = () => {
   );
 };
 const ButtonText = styled.p`
+
   @media only screen and (max-width: 500px) {
     ${tw`self-center`}
     font-size: 14px;

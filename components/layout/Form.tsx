@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const FormZ = () => {
   var emailjs = require("emailjs-com");
-
+  const [isSent, setIsSent] = useState(false);
   const [status, setStatus] = useState("Send");
   const [userEmail, setUserEmail] = useState("");
   const [title, setTitle] = useState("");
@@ -28,6 +28,13 @@ const FormZ = () => {
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         setStatus("Sent");
+        setMsg("");
+        setName("");
+        setTitle("");
+        setUserEmail("");
+        setTimeout(() => {
+          setIsSent(true);
+        }, 500);
       },
       function (err) {
         console.log("FAILED...", err);
@@ -38,58 +45,70 @@ const FormZ = () => {
 
   return (
     <>
-      <TitleContainer>
-        <Title>Contact Form To Cyrille</Title>
-      </TitleContainer>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <InputField
-            type="text"
-            id="name"
-            placeholder={"Name"}
-            required
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-          />
-        </div>
-        <div>
-          <InputField
-            type="text"
-            id="title"
-            placeholder={"Subject"}
-            required
-            value={title}
-            onChange={(event) => setTitle(event.target.value)}
-          />
-        </div>
-        <div>
-          <InputField
-            type="email"
-            id="email"
-            placeholder={"Email"}
-            required
-            value={userEmail}
-            onChange={(event) => setUserEmail(event.target.value)}
-          />
-        </div>
-        <div>
-          <InputArea
-            id="message"
-            required
-            placeholder={"Message"}
-            value={msg}
-            onChange={(event) => setMsg(event.target.value)}
-          />
-        </div>
-        <ButtonContainer>
-          <Button color="white" type="submit">
-            {status}
-          </Button>
-        </ButtonContainer>
-      </form>
+      {isSent === false ? (
+        <>
+          <TitleContainer>
+            <Title>Say hi to Cyrille </Title>
+          </TitleContainer>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <InputField
+                type="text"
+                id="name"
+                placeholder={"Name"}
+                required
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+              />
+            </div>
+            <div>
+              <InputField
+                type="text"
+                id="title"
+                placeholder={"Subject"}
+                required
+                value={title}
+                onChange={(event) => setTitle(event.target.value)}
+              />
+            </div>
+            <div>
+              <InputField
+                type="email"
+                id="email"
+                placeholder={"Email"}
+                required
+                value={userEmail}
+                onChange={(event) => setUserEmail(event.target.value)}
+              />
+            </div>
+            <div>
+              <InputArea
+                id="message"
+                required
+                placeholder={"Message"}
+                value={msg}
+                onChange={(event) => setMsg(event.target.value)}
+              />
+            </div>
+            <ButtonContainer>
+              <Button color="white" type="submit">
+                {status}
+              </Button>
+            </ButtonContainer>
+          </form>{" "}
+        </>
+      ) : (
+        <SentMessage>
+          <p>Thank you so much for reaching out</p>
+        </SentMessage>
+      )}
     </>
   );
 };
+const SentMessage = styled.div`
+  ${tw`w-full text-green-400 flex flex-row justify-center place-items-center justify-items-center`}
+  vertical-align: middle;
+`;
 const TitleContainer = styled.div`
   ${tw`w-full`}
 `;

@@ -9,9 +9,11 @@ type CompetencyProps = {
 };
 const Competency = styled.div`
   ${tw`mb-3 last:mb-0`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 const CompetenciesContainer = styled.div`
   ${tw`grid grid-flow-row md:(grid-cols-2 grid-rows-1)`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 
 const Wrapper = styled.div`
@@ -19,10 +21,12 @@ const Wrapper = styled.div`
 `;
 const Title = styled.div`
   ${tw`text-2xl mb-6 font-bold`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Line = styled.div`
   ${tw`border-solid border-gray-900 w-full mx-auto mb-3 block md:hidden mt-12`}
   border: 1px solid;
+  font-family: "Courier New", Courier, monospace;
 `;
 
 const CompetencyContent: React.FC<CompetencyProps> = ({
@@ -32,8 +36,9 @@ const CompetencyContent: React.FC<CompetencyProps> = ({
   return (
     <>
       <motion.div
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, y: 100 }}
+        exit={{ opacity: 1 }}
+        animate={{ opacity: 1, y: 0 }}
         variants={{
           hidden: {
             scale: 0.7,

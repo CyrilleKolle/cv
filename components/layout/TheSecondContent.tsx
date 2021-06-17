@@ -33,14 +33,17 @@ const Wrapper = styled.div<{ minWidth: boolean; marginLeft: boolean }>`
 const Title = styled.div`
   ${tw`text-2xl font-bold text-gray-900 mb-6`}
   font-family: Helvetica;
+  font-family: "Courier New", Courier, monospace;
 `;
 const PrimaryItem = styled.div`
   ${tw`text-xl font-bold text-gray-900`}
   font-family: Helvetica;
+  font-family: "Courier New", Courier, monospace;
 `;
 const SecondaryItem = styled.div`
   ${tw`text-base mt-0 text-gray-900`}
   font-family: Helvetica;
+  font-family: "Courier New", Courier, monospace;
 `;
 const ItemWrapper = styled.div`
   ${tw`flex flex-col mt-4`}

@@ -14,15 +14,15 @@ const Wrapper = styled.div`
 `;
 const EricReference = styled.div`
   ${tw`text-xs text-gray-900`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const MainText = styled.div`
   ${tw`text-4xl mt-2 text-gray-900 max-w-lg`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Description = styled.div`
   ${tw`text-xl mt-6 text-gray-900 max-w-xl`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 
 const TheIntroContent: React.FC<IntroContentProps> = ({
@@ -33,8 +33,10 @@ const TheIntroContent: React.FC<IntroContentProps> = ({
   return (
     <>
       <motion.div
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, y: 140 }}
+        exit={{ opacity: 1 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 2 }}
         variants={{
           hidden: {
             scale: 0.7,

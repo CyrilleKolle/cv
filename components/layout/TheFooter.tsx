@@ -6,26 +6,28 @@ type ContactContentProps = {};
 
 const Wrapper = styled.div`
   ${tw`flex flex-col mt-12 mb-5 md:(mt-0 flex-row justify-between mb-5) lg:(mt-12)`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Name = styled.div`
   ${tw`text-base font-bold `}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Email = styled.a`
   ${tw`text-base font-bold text-blue-700 mt-4 md:mt-0 hover:text-pink-500`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Telephone = styled.a`
   ${tw`text-base font-bold text-blue-700 mt-4 md:mt-0 hover:text-pink-500`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 
 const LinkedIn = styled.a`
   ${tw`text-base font-bold text-blue-700 mt-4 md:mt-0 hover:text-pink-500`}
-  font-family: Helvetica;
+  font-family: 'Courier New', Courier, monospace;
 `;
 const Github = styled.a`
   ${tw`text-base font-bold text-blue-700 mt-4 md:mt-0 hover:text-pink-500`}
+  font-family: 'Courier New', Courier, monospace;
 `;
 
 const TheFooter: React.FC<ContactContentProps> = ({}) => {
