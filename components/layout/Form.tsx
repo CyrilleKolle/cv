@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
+
 const FormZ = () => {
-  // var emailjs = require("Emailjs-com");
-  
+  var emailjs = require("emailjs-com");
+
   const [status, setStatus] = useState("Send");
   const [userEmail, setUserEmail] = useState("");
   const [title, setTitle] = useState("");
