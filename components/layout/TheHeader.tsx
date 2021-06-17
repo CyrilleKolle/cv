@@ -9,7 +9,7 @@ type HeaderContentProps = {
 };
 
 const Wrapper = styled.div`
-  ${tw``}
+  ${tw`bg-gray-300`}
   position: fixed;
   top: 0;
   width: 100%;
@@ -29,23 +29,23 @@ const TheHeader: React.FC<HeaderContentProps> = ({ name, description }) => {
   return (
     <>
       <motion.div
-        // initial={{ opacity: 0, y: -200 }}
-        // exit={{ opacity: 1 }}
-        // animate={{ opacity: 1, y: 0 }}
-        // transition={{ type: "spring", duration: 2 }}
-        // variants={{
-        //   hidden: {
-        //     scale: 0.7,
-        //     opacity: 0,
-        //   },
-        //   visible: {
-        //     scale: 1,
-        //     opacity: 1,
-        //     transition: {
-        //       delay: 0.2,
-        //     },
-        //   },
-        // }}
+      // initial={{ opacity: 0, y: -200 }}
+      // exit={{ opacity: 1 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{ type: "spring", duration: 2 }}
+      // variants={{
+      //   hidden: {
+      //     scale: 0.7,
+      //     opacity: 0,
+      //   },
+      //   visible: {
+      //     scale: 1,
+      //     opacity: 1,
+      //     transition: {
+      //       delay: 0.2,
+      //     },
+      //   },
+      // }}
       >
         <Wrapper>
           <InnerWrapper>
