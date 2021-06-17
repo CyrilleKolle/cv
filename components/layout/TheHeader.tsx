@@ -24,6 +24,7 @@ const Description = styled.div`
 `;
 const InnerWrapper = styled.div`
   margin-top: 48px;
+  width: 100%;
 `;
 const TheHeader: React.FC<HeaderContentProps> = ({ name, description }) => {
   return (

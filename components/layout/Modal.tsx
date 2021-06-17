@@ -127,7 +127,7 @@ const StyledModal = styled.div`
   position: sticky;
   @media only screen and (max-width: 500px) {
     justify-content: center;
-    width: auto;
+    width: 400px;
     height: 600px;
     margin-right: 10px;
     margin-left: 10px;
