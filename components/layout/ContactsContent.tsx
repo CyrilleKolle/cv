@@ -45,7 +45,7 @@ const ContactsContent: React.FC<ContactContentProps> = ({
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: -120 }}
         exit={{ opacity: 1 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 2 }}
