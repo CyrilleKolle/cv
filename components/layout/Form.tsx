@@ -48,7 +48,7 @@ const FormZ = () => {
       {isSent === false ? (
         <>
           <TitleContainer>
-            <Title>Say hi to Cyrille </Title>
+            <Title>Skicka iväg ett Hej till Cyrille </Title>
           </TitleContainer>
           <form onSubmit={handleSubmit}>
             <div>

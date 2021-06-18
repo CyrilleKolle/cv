@@ -28,34 +28,12 @@ const InnerWrapper = styled.div`
 `;
 const TheHeader: React.FC<HeaderContentProps> = ({ name, description }) => {
   return (
-    <>
-      <motion.div
-      // initial={{ opacity: 0, y: -200 }}
-      // exit={{ opacity: 1 }}
-      // animate={{ opacity: 1, y: 0 }}
-      // transition={{ type: "spring", duration: 2 }}
-      // variants={{
-      //   hidden: {
-      //     scale: 0.7,
-      //     opacity: 0,
-      //   },
-      //   visible: {
-      //     scale: 1,
-      //     opacity: 1,
-      //     transition: {
-      //       delay: 0.2,
-      //     },
-      //   },
-      // }}
-      >
-        <Wrapper>
-          <InnerWrapper>
-            <Name>{name}</Name>
-            <Description>{description}</Description>
-          </InnerWrapper>
-        </Wrapper>
-      </motion.div>
-    </>
+    <Wrapper>
+      <InnerWrapper>
+        <Name>{name}</Name>
+        <Description>{description}</Description>
+      </InnerWrapper>
+    </Wrapper>
   );
 };
 export default TheHeader;

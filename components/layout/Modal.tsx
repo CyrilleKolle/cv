@@ -78,7 +78,7 @@ const Modal = () => {
             whileTap={{ scale: 0.9 }}
             animate={{ x: x }}
           >
-            <ButtonText>Return to Form</ButtonText>
+            <ButtonText>Kontaktformulär</ButtonText>
           </StyledButton>
         </StyledFillOverlay>
       )}
