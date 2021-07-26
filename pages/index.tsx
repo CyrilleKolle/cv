@@ -17,6 +17,9 @@ import ThePageContent from "../components/layout/ThePageContent";
 import Modal from "../components/layout/Modal";
 import tw from "twin.macro";
 import styled from "styled-components";
+// import { useRouter } from "next/router";
+// import { useTranslation } from "next-i18next";
+// import Link from "next/link";
 
 const Row = styled.div`
   ${tw`flex flex-col`}
@@ -26,6 +29,8 @@ const Row = styled.div`
 `;
 
 export default function Home() {
+  // const router = useRouter();
+  // const { t } = useTranslation();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const handleScroll = () => {
     const bottom =
@@ -52,10 +57,12 @@ export default function Home() {
   return (
     <>
       <ThePageContent>
-        <TheHeader
-          name={"Cyrille Ngide Kolle"}
-          description={"Frontend och backend-utvecklare"}
-        />
+        {/* <div>
+          <Link href="/" locale={router.locale === "en" ? "sv" : "en"}>
+            <button>{t("language")}</button>
+          </Link>
+        </div> */}
+        <TheHeader name={"Cyrille Ngide Kolle"} description={"headerTitle"} />
         <Seperator marginTop={false} />
         <Row>
           <TheLeftContent>
@@ -141,6 +148,9 @@ export default function Home() {
                 "Agile methodologies",
                 "Scrum",
                 "Project Management",
+                "Continuous Intergration",
+                "Continuous Delivery",
+                "AngularJs",
               ]}
             />
             <Seperator hidden={false} largeHiden={false} midHidden={false} />
