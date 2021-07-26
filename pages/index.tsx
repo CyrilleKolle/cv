@@ -62,7 +62,10 @@ export default function Home() {
             <button>{t("language")}</button>
           </Link>
         </div> */}
-        <TheHeader name={"Cyrille Ngide Kolle"} description={"headerTitle"} />
+        <TheHeader
+          name={"Cyrille Ngide Kolle"}
+          description={"Frontend and backend-developer"}
+        />
         <Seperator marginTop={false} />
         <Row>
           <TheLeftContent>
